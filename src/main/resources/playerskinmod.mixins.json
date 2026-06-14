@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "com.kzdevelopment.playerskinmod.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["MixinPlayerRenderer", "MixinAbstractClientPlayer"],
+  "injectors": { "defaultRequire": 1 }
+}

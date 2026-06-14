@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "playerskinmod",
+  "version": "${version}",
+  "name": "Player Skin & Nametag Override",
+  "description": "Client-side override of nametags and skins – made by Kz-development and Zanjin, Kolbjorn  /n för min neger kometo0",
+  "authors": ["Kz-development", "Zanjin, Kolbjorn"],
+  "contact": { "homepage": "https://github.com/Kz-devlp" },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.kzdevelopment.playerskinmod.PlayerSkinModClient"],
+    "modmenu": ["com.kzdevelopment.playerskinmod.compat.ModMenuIntegration"]
+  },
+  "mixins": ["playerskinmod.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "fabric-api": "*",
+    "modmenu": ">=13.0.0"
+  }
+}
